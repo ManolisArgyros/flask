@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    background-color: SlateGrey;
+}
+p {
+    color: white;
+    font-family: Shanti;
+    font-size: 1.2em;
+    display: inline-block; /* το κείμενo θα κατανεμηθεί ομοιόμορφα (σε όλες τις πλευρές) μέσα στο block 20px */
+    margin:  20px; /* περιμετρικά (σε όλες τις πλευρές) της παραγράφου 20 px απόσταση από τα άλλα στοιχεία */
+}
+img {
+    margin: 60px 0 30px 0;
+    width: 250px;
+}
+input {
+  width: 300px;
+  margin: 20px 20px;
+  height: 50px;
+  border: none;
+  border-radius: 10px; /* και στις 4 γωνίες στρογγύλεμα, αν έβαζα  border-radius: 50px 20px; τότε θα ήταν 
+                            πάνω αριστερά και κάτω δεξιά 50px, ενώ πάνω δεξιά και κάτω αριστερά 20px */
+  font-family: Shanti;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+input:focus {
+    outline: none; /* χώρος εκτός border, το context έχει εξωτερικά τον χώρο border και το border εξωτερικά 
+                    τον χώρο για το outline. */
+    border: solid 5px #00FFCE;
+}
+
+#cmdgreet { /* για όποιο στοιχείο έχει id="cmdgreet" */
+    background-color: PaleVioletRed;
+    border:  none;
+    width:  200px;
+    color: white;
+}
+
+#cmdgreet:hover {
+    background-color: MediumVioletRed;
+}
